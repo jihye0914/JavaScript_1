@@ -1,0 +1,33 @@
+<Java Script>
+
+*Java Script 실행법
+ 1) 웹 페이지 오른쪽 마우스 클릭 -> 검사 -> console : 대화형. 순차적으로 실행되면 많아지면 굉장히 복합해짐. 반복작업때 실패하면 수십번 작동이 됨.
+ 2) <body>안에 <script>만든 후 그 안에 값 입력
+
+*웹페이지에서 java 써보기(console창)
+ - 1+1 : 2
+ - math.random() : 1미만의 랜덤한 숫자가 나옴
+ - math.random()*100 : 1미만의 숫자에 100만큼 곱한 값이 나옴
+ - alert('메세지') : 팝업으로 메세지가 나옴
+ - confirm('메시지') : undefined. 팝업으로 메세지가 나옴. 확인 누르면 true값. 취소 누르면 false값
+ - prompt('메시지') : 팝업으로 입력란이 나옴. 입력하면 입력값. 취소 누르면 null값
+ - 응용 : alert(Math.random()) : 랜덤한 숫자가 메세지로 나옴
+ - 반복 실행 : alert(메세지);alert(메세지);alert(메세지); : 순서대로 메세지가 나옴. 사이에 ';' 붙여줘야 함
+
+*프로그램으로 javascript 써보기
+ - console에 나타나도록 실행 : console.log(메시지);
+ - 웹 페이지에서 나타나도록 실행 : document.write(메시지);
+ - 함수 넣을 시 새로고침 할 때 마다 새로운 값 나옴 : 예시 - document.write(Math.random());
+ - 버튼 만들기, 버튼 안에 값넣기, 버튼 누르면 메세지 뜨게하기 : <input type="button" value="값" onclick="alert('메시지');">
+
+*페이지 속성 바꾸기 예시
+ - document.querySelector('body'); - body부분 선택
+ - document.querySelector('#container') - id를 container로 지정한 부분 선택
+ - document.querySelector('body').style.backgroundColor='black'; - body부분 배경색 검정색으로 바꾸기
+ - document.querySelector('body').style.color='blue'; - body부분 글씨색 푸른색으로 바뀜
+
+*응용(버튼 만들기 : 누르면 배경색과 글씨색이 바뀌는 기능)
+ - body안에서 작성
+ - <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';document.querySelector('body').style.color='yellow';">
+ - <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white';document.querySelector('body').style.color='black';">
+ -> night버튼 누르면 배경 검정색, 글씨 노란색 / day버튼 누르면 배경 흰색, 글씨 검정색
