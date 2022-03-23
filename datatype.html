@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <h1>Number</h1>
+        <script>
+            console.log(1); //정수
+            console.log(1.1); //실수
+
+            // Operator
+            console.log(1+1); //2
+            console.log(2-1); //1
+            console.log(2*2); //4
+            console.log(4/2); //2
+            
+            // 함수
+            console.log(Math.random()); //랜덤값
+            console.log(Math.PI); //PI값
+            console.log(Math.floor(1.9)); //정수값
+            console.log(Math.floor(Math.random()*100)); //1~100미만의 정수값
+
+        </script>
+
+        <h1>문자열(String)</h1>
+        <script>
+            console.log('Hello world');
+            console.log("Hello world"); // '' 또는 "" 둘다 가능하나 같은 것으로 열고 닫혀야 한다
+            console.log('Hello \
+            world'); //역슬래시 쓰면 다음줄에도 입력 가능하나 실제 줄바꿔진 건 X
+            console.log(`Hello
+            world`); //물결 즉 빽틱을 쓰면 역슬래시 쓰지않아도 다음줄에도 입력 가능하며 실제로 줄이 바뀜 O
+
+            console.log('Hello world'.length); //문자 개수세기. 띄어쓰기 포함
+            console.log('Hell world'.replace('Hell','Hello')); //메시지 중 A단어를 B단어로 바꾸기
+            console.log('Hello'+'world'); //합치기
+
+            console.log('1'+'1'); //숫자를 문자로 입력하기 때문에 사칙연산이 아닌 합쳐짐. 값은 11
+
+        </script>
+    </body>
+</html>
